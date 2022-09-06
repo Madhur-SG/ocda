@@ -1,5 +1,4 @@
-          				Install-Module -Name Az -Repository PSGallery -Force
-					$aadApplication = New-AzureADApplication -DisplayName "ocda-app"
+          				$aadApplication = New-AzureADApplication -DisplayName "ocda-app"
 					$appObjectId=$aadApplication.ObjectId
 					$appPassword = New-AzureADApplicationPasswordCredential -ObjectId $appObjectId -CustomKeyIdentifier "ClientSecret" -EndDate (Get-Date).AddYears(2)
 					$appId=$aadApplication.AppId

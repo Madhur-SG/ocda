@@ -1,4 +1,4 @@
-          				Install-Module AzureAD
+          				#Install-Module AzureAD
 					#Connect-AzureAD
 					$aadApplication = New-AzureADApplication -DisplayName "ocda-app"
 
